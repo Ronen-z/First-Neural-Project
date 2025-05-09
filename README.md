@@ -12,15 +12,23 @@ Authors
 License
 
 ## Features
-- End-to-end pipeline from web scraping to model evaluation
-- Custom Transformer built from scratch (positional encodings, multi-head attention, encoder layers)
-- BPE tokenizer trained on your data for robust subword representations
-- English→Arabic translation using Maarefa-NLP before Arabic preprocessing
-- Comprehensive EDA on both English and Arabic datasets
 
+- End-to-end pipeline from web scraping to model evaluation
+- 
+- Custom Transformer built from scratch (positional encodings, multi-head attention, encoder layers)
+- 
+- BPE tokenizer trained on your data for robust subword representations
+- 
+- English→Arabic translation using Maarefa-NLP before Arabic preprocessing
+- 
+- Comprehensive EDA on both English and Arabic datasets
+  
 ## Repositry Structure
+
+```
+.
 ├── notebooks/
-│   ├── 01_Scraping.ipynb           # Scrape English reviews from Trustpilot
+│   ├── 01_Scraping.ipynb             # Scrape English reviews from Trustpilot
 │   ├── 02_PreProcessingEnglish.ipynb # Clean & normalize English text
 │   ├── 03_Translation.ipynb          # Translate to Arabic with Maarefa-NLP
 │   ├── 04_PreProcessingArabic.ipynb  # Arabic text cleaning & tokenization
@@ -33,16 +41,21 @@ License
 ├── requirements.txt
 └── README.md
 
+```
 
 ## Usage 
 ### Scraping
 Run 01_Scraping.ipynb to collect English reviews from Trustpilot and save to data/english_reviews.csv.
+
 ### English Preprocessing
 Run 02_PreProcessingEnglish.ipynb to clean and normalize the raw English data.
+
 ###Translation
 Run 03_Translation.ipynb to translate the cleaned English reviews into Arabic using Maarefa-NLP.
+
 ###Arabic Preprocessing
 Run 04_PreProcessingArabic.ipynb to clean, remove stopwords, stem, and prepare Arabic text for tokenization.
+
 ###Model Training
 Run 05_Transformer_Model.ipynb to train your custom Transformer on the preprocessed Arabic dataset, then evaluate.
 
