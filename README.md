@@ -19,7 +19,6 @@ License
 - Comprehensive EDA on both English and Arabic datasets
 
 ## Repositry Structure
-.
 ├── notebooks/
 │   ├── 01_Scraping.ipynb           # Scrape English reviews from Trustpilot
 │   ├── 02_PreProcessingEnglish.ipynb # Clean & normalize English text
@@ -33,6 +32,7 @@ License
 ├── models/                           # Saved model checkpoints
 ├── requirements.txt
 └── README.md
+
 
 ## Usage 
 ### Scraping
