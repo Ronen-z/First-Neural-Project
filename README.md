@@ -21,7 +21,7 @@ License
 ## Repositry Structure
 .
 ├── notebooks/
-│   ├── 01_Scraping.ipynb             # Scrape English reviews from Trustpilot
+│   ├── 01_Scraping.ipynb           # Scrape English reviews from Trustpilot
 │   ├── 02_PreProcessingEnglish.ipynb # Clean & normalize English text
 │   ├── 03_Translation.ipynb          # Translate to Arabic with Maarefa-NLP
 │   ├── 04_PreProcessingArabic.ipynb  # Arabic text cleaning & tokenization
@@ -48,9 +48,13 @@ Run 05_Transformer_Model.ipynb to train your custom Transformer on the preproces
 
 ## Results 
 Accuracy: 84.87%
+
 Precision: 84.97%
+
 Recall: 84.87%
+
 F1-Score: 84.91%
+
 These metrics demonstrate that a custom-built Transformer can rival standard architectures on Arabic sentiment tasks.
 
 ## Future Work
