@@ -14,17 +14,12 @@ License
 ## Features
 
 - End-to-end pipeline from web scraping to model evaluation
-- 
 - Custom Transformer built from scratch (positional encodings, multi-head attention, encoder layers)
-- 
 - BPE tokenizer trained on your data for robust subword representations
-- 
 - English→Arabic translation using Maarefa-NLP before Arabic preprocessing
-- 
 - Comprehensive EDA on both English and Arabic datasets
   
 ## Repositry Structure
-
 ```
 .
 ├── notebooks/
@@ -50,16 +45,17 @@ Run 01_Scraping.ipynb to collect English reviews from Trustpilot and save to dat
 ### English Preprocessing
 Run 02_PreProcessingEnglish.ipynb to clean and normalize the raw English data.
 
-###Translation
+### Translation
 Run 03_Translation.ipynb to translate the cleaned English reviews into Arabic using Maarefa-NLP.
 
-###Arabic Preprocessing
+### Arabic Preprocessing
 Run 04_PreProcessingArabic.ipynb to clean, remove stopwords, stem, and prepare Arabic text for tokenization.
 
-###Model Training
+### Model Training
 Run 05_Transformer_Model.ipynb to train your custom Transformer on the preprocessed Arabic dataset, then evaluate.
 
 ## Results 
+
 Accuracy: 84.87%
 
 Precision: 84.97%
@@ -71,6 +67,7 @@ F1-Score: 84.91%
 These metrics demonstrate that a custom-built Transformer can rival standard architectures on Arabic sentiment tasks.
 
 ## Future Work
+
 Hyperparameter tuning (learning rates, number of heads, layers)
 
 Expand dataset with additional Arabic reviews for dialectal robustness
